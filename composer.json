@@ -1,0 +1,30 @@
+{
+  "name": "macfja/chain-config",
+  "license": "MIT",
+  "keywords": ["Configuration", "Chain", "Load Priority", "YAML", "Json", "Ini", "Neon", "XML"],
+  "description": "A configuration loader, where order matters.",
+  "authors": [
+    {
+      "name": "MacFJA"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"MacFJA\\ChainConfig\\": "lib/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"MacFJA\\ChainConfig\\Test\\": "tests/"}
+  },
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "symfony/yaml": "^2.8",
+    "squizlabs/php_codesniffer": "^2.5",
+    "nette/neon": "^2.3"
+  },
+  "suggest": {
+    "symfony/yaml": "For reading Yaml configuration format",
+    "nette/neon": "For reading Neon configuration format"
+  }
+}
